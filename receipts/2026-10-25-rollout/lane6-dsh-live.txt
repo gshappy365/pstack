@@ -1,0 +1,24 @@
+Lane 6 dsh live mechanism probe 2026-10-25T14:28+0800. Read-only first, then one minimal headless launch.
+--- profiles ---
+headless
+wdeb
+web
+Usage: dsh [--profile] <name> [options] [app-args...]
+       dsh plugin --profile <name> <pnpm-args...>
+
+dsh: boot a DeepSeek Harness profile — an ordered stack of plugin-bundle patch
+--- headless help ---
+Usage: dsh --profile headless [options] [task...]
+
+Answer one task and exit; the answer goes to stdout and diagnostics to stderr.
+
+Arguments:
+  task               the task text; multiple words are joined by spaces, and `-`
+                     reads stdin
+
+--- minimal launch attempt ---
+
+dsh: MISSING_CREDENTIAL: llm-deepseek: no API key for provider route "deepseek-official"; store DEEPSEEK_API_KEY through the credentials service (the web Models page writes it), or export DEEPSEEK_API_KEY in the launching environment
+dsh exit=0
+=== addendum 2026-10-25T14:29+0800 ===
+the 'dsh exit=0' line above records the tail pipe's exit, not dsh's (pipe-masking again). The substantive evidence is the MISSING_CREDENTIAL error text. VERDICT: BLOCKED on credentials. Mechanism progress verified: headless profile exists, accepts stdin task, answers to stdout. Skill-consumption (~/.dsh/skills loading) remains unproven behind the credential gate. Unblock: store DEEPSEEK_API_KEY via the credentials service (web Models page) or export it, then rerun this lane.
