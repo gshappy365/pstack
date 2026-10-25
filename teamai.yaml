@@ -10,10 +10,15 @@ publicSkills:
   - blast-radius
   - bro
   - correct
+  - create-formal-verification-skill
   - create-verification-skill
   - figure-it-out
   - how
+  - in-your-own-words
   - interrogate
+  - ketchup
+  - ketchup-video
+  - maintain-formal-verification-skill
   - maintain-verification-skill
   - make-bot-ui
   - no-comments
@@ -46,7 +51,9 @@ publicSkills:
   - recall
   - reflect
   - setup-pstack
+  - sharpen
   - show-me-your-work
+  - statechart
   - swarm
   - tdd
   - teach
