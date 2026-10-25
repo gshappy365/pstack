@@ -1,0 +1,33 @@
+{
+  "payload": 164,
+  "ok": true,
+  "hosts": [
+    {
+      "host": "zcode",
+      "target": "C:\\Users\\李平\\.zcode\\skills",
+      "status": "ok",
+      "absent": 0,
+      "drifted": 0,
+      "details": [],
+      "skills": 15
+    },
+    {
+      "host": "codex",
+      "target": "\\\\wsl$\\Ubuntu\\home\\gao\\.codex\\skills",
+      "status": "ok",
+      "absent": 0,
+      "drifted": 0,
+      "details": [],
+      "skills": 117
+    },
+    {
+      "host": "agents",
+      "target": "\\\\wsl$\\Ubuntu\\home\\gao\\.agents\\skills",
+      "status": "ok",
+      "absent": 0,
+      "drifted": 0,
+      "details": [],
+      "skills": 75
+    }
+  ]
+}

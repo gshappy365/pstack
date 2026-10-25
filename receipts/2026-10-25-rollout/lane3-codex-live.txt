@@ -1,0 +1,34 @@
+Lane 3 Codex live (Appendix E: Codex 代劳 WSL-side claude) 2026-10-25T14:27+0800.
+Prompt: read docs/harness/kitchen.md and skills/poteto-mode/SKILL.md, execute the first two playbook-mechanics steps in-conversation (match a playbook, open the step list), then state one adapted-mechanism mapping and emit one Skipped in kitchen line.
+--- run (timeout 110) ---
+8. Run **Opening a PR**.
+
+Code-coupled work (one feature, one migration) goes to a single owner with the checkpoint inline. That owner fans out internally after the blocking phase. Parent-level fan-out is for slices that produce independent artifacts (audits, cross-subsystem investigations, competing experiments). Rewrite the checkpoint at phase boundaries. Spawn a fresh owner rather than chaining interrupts.
+
+**Reply:** what you built, what you chose and why, the throughput checkpoint, open decisions. Tables for design alternatives.
+
+
+hook: PostToolUse
+hook: PostToolUse Failed
+codex
+已完整读取指定三节，并读取 Feature playbook 全文。将“把 pstack 适配到行政厨房”匹配为 **Feature**，因为它新增宿主适配行为。前两条待办按原文保留：
+
+1. [ ] `how` over the affected subsystem.
+2. [ ] `architect` for parallel design exploration.
+
+本次采用的宿主映射是 Cursor 的 “Open a todolist” → Codex 回复内列表，并在每阶段更新。
+
+Skipped in kitchen: 执行 cursor-team-kit 的 deslop 步骤. 当前 Codex 宿主没有该 Cursor 插件机制，按适配文档跳过并继续.
+hook: Stop
+hook: Stop Failed
+tokens used
+37,637
+已完整读取指定三节，并读取 Feature playbook 全文。将“把 pstack 适配到行政厨房”匹配为 **Feature**，因为它新增宿主适配行为。前两条待办按原文保留：
+
+1. [ ] `how` over the affected subsystem.
+2. [ ] `architect` for parallel design exploration.
+
+本次采用的宿主映射是 Cursor 的 “Open a todolist” → Codex 回复内列表，并在每阶段更新。
+
+Skipped in kitchen: 执行 cursor-team-kit 的 deslop 步骤. 当前 Codex 宿主没有该 Cursor 插件机制，按适配文档跳过并继续.
+codex exit=0
