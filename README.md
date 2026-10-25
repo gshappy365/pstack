@@ -29,6 +29,8 @@ claude code leaves auto-update off for third-party marketplaces, so pstack stays
 
 claude code prefixes plugin commands and agents, so `/poteto-mode` is `/pstack:poteto-mode`. the [claude code adapter](./docs/harness/claude-code.md) maps every other cursor name. in claude code, `/pstack:setup-pstack` writes your model choices to `~/.claude/rules/pstack-models.md`, and a step that needs a cursor-only feature, such as bugbot or automations, is skipped with a one-line note.
 
+in the 行政厨房 (kitchen), the hosts are ZCode on windows, Codex, `.agents`, and DSH, and none has a plugin marketplace. (Claude Code in WSL was retired by the operator on 2026-10-25; Codex covers its WSL-side skill runs, and the existing `~/.claude` install is left in place.) skills install by directory copy into each host's skills folder. a session reads the [kitchen adapter](./docs/harness/kitchen.md) to map every cursor name to its host, to skip cursor-only steps with a one-line note, and to route governance steps (org-tree writes, the inbox, the slack redline) per its governance table.
+
 claude code installs a generated copy of pstack, including this readme and the guide, from [`harness/pstack/`](https://github.com/cursor/plugins/tree/main/harness/pstack) at the repository root. after you change pstack, run `node scripts/generate-pstack-harness-trees.mjs` from the repository root and commit the result. ci fails while the generated copy is out of date.
 
 ## get started
